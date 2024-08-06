@@ -1,22 +1,25 @@
-import Hero from "./Sections/Hero/Hero";
+
 import './App.css';
-import Projects from "./Sections/Projects/Projects";
-import Skills from "./Skills/Skills";
-import Contact from "./Sections/Contact/Contact";
-import Footer from "./Sections/Footer/Footer";
-import Blogs from "./Sections/Blogs/Blogs";
+import {Route, createBrowserRouter, createRoutesFromElements,RouterProvider} from 'react-router-dom';
+import Layout from "./Pages/Layout";
+import HomePage from "./Pages/HomePage/HomePage";
+import BlogPage1 from "./Pages/BlogPage/BlogPage1";
+import BlogPage2 from "./Pages/BlogPage/BlogPage2";
+
 
 function App() {
-  return (
-    <>
-    <Hero/>
-    <Blogs/>
-    <Projects/>
-    <Skills/>
-    <Contact/>
-    <Footer/>
-    </>
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout/>}>
+        <Route path="/home" element={<HomePage/>}/>
+        <Route path='/SpringBoot-infinite-recursion-loop' element={<BlogPage1/>}/>
+        <Route path='/SpringBoot-dependency-injection' element={<BlogPage2/>}/>
+      </Route>
+    )
   )
+
+  return<RouterProvider router={router}/>;
 }
 
 export default App
