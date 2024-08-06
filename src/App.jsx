@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Route, createBrowserRouter, createRoutesFromElements,RouterProvider} from 'react-router-dom';
+import {Route, createBrowserRouter, createRoutesFromElements,RouterProvider, Navigate} from 'react-router-dom';
 import Layout from "./Pages/Layout";
 import HomePage from "./Pages/HomePage/HomePage";
 import BlogPage1 from "./Pages/BlogPage/BlogPage1/BlogPage1";
@@ -15,6 +15,7 @@ function App() {
         <Route path="/home" element={<HomePage/>}/>
         <Route path='/SpringBoot-infinite-recursion-loop' element={<BlogPage1/>}/>
         <Route path='/SpringBoot-dependency-injection' element={<BlogPage2/>}/>
+        <Route path="/" element={<Navigate to="/home" />} />
       </Route>
     )
   )
