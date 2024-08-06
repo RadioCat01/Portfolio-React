@@ -8,8 +8,8 @@
     min-height: 500px;
 
     .hero{
-        max-width: 200px;
-        border-radius: 100px;
+        max-width: 240px;
+        border-radius: 120px;
     }
 
     span{
@@ -66,12 +66,16 @@
 }
 .description{
     max-width: 24ch;
+    margin-left: 44px;
 }
 .info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+}
+.typeWriterh2{
+    height: 30px;
 }
 
 @media(width >= 800px){
@@ -83,17 +87,19 @@
         .hero{
             max-width: 400px;
             width: 400px;
+            border-radius: 200px;
         }
-    }
-   
-   
+    } 
 }
 
 @media(width >= 1400px){
    .container{
+   
     .hero{
         max-width: 400px;
         width: 400px;
+        border-radius: 200px;
     }
 }
+
 }
