@@ -5,7 +5,8 @@
     gap: 20px;
     text-align: center;
     height: 100dvh;
-    min-height: 500px;
+    min-height: 800px;
+    border: 1px solid red;
 
     .hero{
         max-width: 240px;
@@ -58,8 +59,8 @@
 
 .colorMode{
     position: absolute;
-    right: -105px;
-    top: -125px;
+    right: 15px;
+    top: -70px;
     width: 25px;
 }
 .colorMode:hover{
