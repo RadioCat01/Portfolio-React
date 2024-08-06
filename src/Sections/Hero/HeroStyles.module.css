@@ -101,5 +101,8 @@
         border-radius: 200px;
     }
 }
-
+.description{
+    max-width: 24ch;
+    margin-left: 40px;
+}
 }

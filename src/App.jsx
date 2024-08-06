@@ -3,8 +3,8 @@ import './App.css';
 import {Route, createBrowserRouter, createRoutesFromElements,RouterProvider} from 'react-router-dom';
 import Layout from "./Pages/Layout";
 import HomePage from "./Pages/HomePage/HomePage";
-import BlogPage1 from "./Pages/BlogPage/BlogPage1";
-import BlogPage2 from "./Pages/BlogPage/BlogPage2";
+import BlogPage1 from "./Pages/BlogPage/BlogPage1/BlogPage1";
+import BlogPage2 from "./Pages/BlogPage/BlogPage2/BlogPage2";
 
 
 function App() {
