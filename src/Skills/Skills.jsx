@@ -13,7 +13,6 @@ import js  from '../assets/Skills/icons8-javascript-480.png';
 function Skills() {
   return (
     <section id='skills' className={styles.container}>
-        <h1 className={'sectionTitle'}>Skills</h1>
         <div className={styles.skillList}>
            <SkillsList src={java} />
            <SkillsList src={spring} />

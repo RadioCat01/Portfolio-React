@@ -8,7 +8,6 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import LinkedinLight from '../../assets/linkedin-light.svg';
 import LinkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/20APC4639_ADatabase_Assignment_01&02.pdf'
 import { useTheme } from '../../common/ThemeContext';
 import { useTypewriter } from 'react-simple-typewriter';
 import { motion } from "framer-motion"
@@ -36,23 +35,21 @@ function Hero() {
             <img onClick={toggleTheme} src={themeIcon} alt='Light-Dark' className={styles.colorMode}/>
         </motion.div>
         <motion.div initial={{x:100, opacity:0}} animate={{ x: 0, opacity: 1}} transition={{duration:0.5, delay: 0.1}} className={styles.info}>
+            <h1 className={styles.im}>I'm</h1>
             <h1>Pawan<br/> Hettiarachchi</h1>
             <h2 className={styles.typeWriterh2}>{text}</h2>
             <span>
-                <a href='' target='_blank'>
+                <a href='https://x.com/Pawan38257022' target='_blank'>
                     <img src={twitter} alt='Twitter icon'/>
                 </a>
-                <a href='' target='_blank'>
-                    <img src={github} alt='Twitter icon'/>
+                <a href='https://github.com/RadioCat01' target='_blank'>
+                    <img src={github} alt='Github icon'/>
                 </a>
-                <a href='' target='_blank'>
-                    <img src={linkedin} alt='Twitter icon'/>
+                <a href='https://www.linkedin.com/in/pawan-kanishka-86b438249/' target='_blank'>
+                    <img src={linkedin} alt='Ln icon'/>
                 </a>
             </span>
-            <p className={styles.description}>With a passion for developing modern react apps for commercial businesses.</p>
-            <a href={CV} download>
-                <button className='hover' >Resume</button>
-            </a>
+            <button className='hover'>About Me</button>
         </motion.div>
     </section>
   )
