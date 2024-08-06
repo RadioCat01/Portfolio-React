@@ -47,6 +47,7 @@
     .hireme{
         background-color: rgb(243, 243, 111);
         cursor: pointer;
+        color: rgb(97, 97, 97);
     }
 
     .PandRes{
@@ -72,12 +73,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100dvh;
+        height: 150dvh;
     
         h1{
-            margin-top: 80px;
+
             font-size: 30px;
-            margin-bottom: -200px;
+            margin-bottom: -40px;
         }
         .info{
     
@@ -109,7 +110,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 150dvh;
 
     h1{
       

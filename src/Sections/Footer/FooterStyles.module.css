@@ -1,7 +1,7 @@
 .container{
     text-align: center;
     p{
-        font-size: 16px;
+        font-size: 12px;
         columns: var(--footer-text-color);
     }
 }
