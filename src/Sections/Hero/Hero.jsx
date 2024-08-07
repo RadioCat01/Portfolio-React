@@ -10,7 +10,8 @@ import LinkedinLight from '../../assets/linkedin-light.svg';
 import LinkedinDark from '../../assets/linkedin-dark.svg';
 import { useTheme } from '../../common/ThemeContext';
 import { useTypewriter } from 'react-simple-typewriter';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production';
 
 function Hero() {
     const {theme, toggleTheme} = useTheme();
@@ -49,7 +50,7 @@ function Hero() {
                     <img src={linkedin} alt='Ln icon'/>
                 </a>
             </span>
-            <button className='hover'>About Me</button>
+            <HashLink to="#AboutMe" smooth className={styles.HashLink}>About Me</HashLink>
         </motion.div>
     </section>
   )

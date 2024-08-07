@@ -46,8 +46,20 @@
 
     .hireme{
         background-color: rgb(243, 243, 111);
-        cursor: pointer;
-        color: rgb(97, 97, 97);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--btn-text-color);
+        border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        font-family: 'Rubik';
+        font-weight: bold;
+        margin-top: 40px;
+        text-decoration: none;
+        box-shadow: 0 4px 4px rgba(100, 98, 98, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     }
 
     .PandRes{
@@ -79,7 +91,7 @@
         h1{
 
             font-size: 30px;
-            margin-bottom: -40px;
+            margin-bottom: -70px;
         }
         .info{
     

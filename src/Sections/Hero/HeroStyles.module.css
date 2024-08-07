@@ -35,22 +35,27 @@
         width: fit-content;
         align-self: center;
     }
-    button{
+    .HashLink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var( --btn-color);
         color: var(--btn-text-color);
         border-radius: 20px;
         width: 134px;
         height: 45px;
-        font-size: 19px;
+        font-size: 18px;
+        font-family: 'Rubik';
         font-weight: bold;
+        text-decoration: none;
         box-shadow: 0 4px 4px rgba(100, 98, 98, 0.25);
         transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     }
 
-    button:hover{
+    .HashLink:hover{
         transform: scale(1.05);
     }
-    button:active{
+    .HashLink:active{
         transform: translateY(2px);
         box-shadow: 0 2px 2px rgba(0,0,0,0.25);
     }

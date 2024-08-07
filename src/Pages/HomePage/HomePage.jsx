@@ -7,14 +7,15 @@ import AboutMe from '../../Sections/AboutMeBand/AboutMe';
 
 function HomePage() {
   return (
-    <>
+    <BrowserRouter>
     <Hero/>
     <Blogs/>
     <AboutMe/>
     <Contacts/>
     <Footer/>
-    </>
+    </BrowserRouter>
   )
 }
+import { BrowserRouter } from 'react-router-dom';
 
 export default HomePage

@@ -3,6 +3,7 @@ import aboutpic from '../../assets/Photo 2024-08-06, 10 05 46 PM.jpg';
 import CV from '../../assets/20APC4639_ADatabase_Assignment_01&02.pdf'
 import { motion } from "framer-motion";
 import Skills from '../../Skills/Skills';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 
@@ -19,7 +20,7 @@ function AboutMe() {
         <motion.div whileInView={{opacity:1, y:0}} initial={{opacity: 0, y:-100}} transition={{duration:0.5}} className={stryles.cont}>
         <a href={CV} download >
                 <button className={stryles.resume} >Resume</button></a>
-                <button className={stryles.hireme} >Hire Me</button>
+                <Link to="#contact" smooth className={stryles.hireme} >Hire Me</Link>
         </motion.div>
         </div>
         </div>
