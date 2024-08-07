@@ -1,6 +1,6 @@
 .img {
-    width: 100%;
-    height: auto;
+    width: 160px;
+    height: 100px;
     object-fit: contain;
     max-height: 200px; 
     padding: 25px 0 25px 0;
@@ -15,4 +15,5 @@
     align-items: center;
     gap: 15px;
     min-width: 280px;
+    margin-bottom: 40px;
 }

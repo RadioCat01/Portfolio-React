@@ -8,6 +8,11 @@ import spring from '../assets/Skills/icons8-spring-boot-480.png';
 import typeS  from '../assets/Skills/icons8-typescript-480.png';
 import springR  from '../assets/Skills/reactive-spring-boot.png';
 import js  from '../assets/Skills/icons8-javascript-480.png';
+import mongo  from '../assets/Skills/mongodb.svg';
+import ps  from '../assets/Skills/pngwing.com.png';
+import uni  from '../assets/Skills/unity.svg';
+import hy  from '../assets/Skills/Hibernate.svg';
+
 
 
 function Skills() {
@@ -15,9 +20,9 @@ function Skills() {
     <section id='skills' className={styles.container}>
         <div className={styles.skillList}>
            <SkillsList src={java} />
-           <SkillsList src={spring} />
-           <SkillsList src={springR} />
            <SkillsList src={c} />
+           <SkillsList src={spring} />
+           <SkillsList src={springR} />    
         </div>
         <hr/>
         <div className={styles.skillList}>
@@ -25,6 +30,14 @@ function Skills() {
            <SkillsList src={js} />
            <SkillsList src={angular} />
            <SkillsList src={typeS} />
+           
+        </div>
+        <hr/>
+        <div className={styles.skillList}>
+           <SkillsList src={ps} />
+           <SkillsList src={mongo} />
+           <SkillsList src={hy} />
+           <SkillsList src={uni} />
         </div>
         
     </section>
