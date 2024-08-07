@@ -1,7 +1,14 @@
 .container{
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    .sectiontitle{
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
 }
 
 form{
@@ -38,10 +45,10 @@ input,textarea{
 input[type='submit']{
     background-color: var( --btn-color);
     color: var(--btn-text-color);
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
+    border-radius: 120px;
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
     font-weight: bold;
     box-shadow: 0 4px 4px rgba(100, 98, 98, 0.25);
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
@@ -58,18 +65,20 @@ input[type='submit']:active{
 
 
 @media(width >= 800px){
+    .container{
+
+        .sectiontitle{
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+    }
+    
     textarea,input:not([type='submit']){
-       width: 600px;
-       font-size: 20px;
+       width: 400px;
+       font-size: 16px;
     }
     form{
         gap: 40px;
-    }
-}
-
-@media(width >= 1400px){
-    textarea,input:not([type='submit']){
-       width: 800px;
-       font-size: 20px;
     }
 }

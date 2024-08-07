@@ -15,5 +15,32 @@
     align-items: center;
     gap: 15px;
     min-width: 280px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+
+
+    .hr{
+        height: 1px;
+        margin-top: -6px;
+        margin-bottom: 10px;
+        width: 80px;
+    }
+    .topic{
+        color: rgb(216, 246, 224);
+        font-family: 'Roboto mono';
+        font-weight: 600;
+    }
+}
+
+@media(width >= 800px){
+    .container{
+        height: 40vh;
+
+        .p{
+            font-size: 16px;
+        }
+
+        .topic{
+            font-size: 14px;
+        }
+    }
 }

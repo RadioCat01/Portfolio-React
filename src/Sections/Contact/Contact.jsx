@@ -3,7 +3,11 @@ import style from './ContactStyles.module.css';
 function Contact() {
   return (
     <section id='contact' className={style.container}>
-        <h1 className='sectionTitle'>Contact</h1>
+        <h1 className={style.sectiontitle}>Contact</h1>
+        <div className={style.cont}>
+            <div className={style.image}>
+                
+            </div>
         <form action="https://formspree.io/f/mzzpgbzw" method="POST">
             <div className='formGroup'>
                 <label htmlFor='name' hidden>Name</label>
@@ -19,6 +23,7 @@ function Contact() {
             </div>
             <input type='submit' className='hover btn' value="Submit"/>
         </form>
+        </div>
     </section>
   )
 }

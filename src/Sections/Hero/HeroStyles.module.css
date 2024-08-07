@@ -115,8 +115,8 @@
 
 .colorMode{
     position: absolute;
-    right: -320px;
-    top: -240px;
+    right: -240px;
+    top: -200px;
     width: 25px;
 }
 }

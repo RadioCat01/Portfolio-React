@@ -23,6 +23,10 @@
         transform: scale(1.05);
     }
 
+    .sectionTitle{
+        font-size: 24px;
+    }
+
     
 }
 
@@ -36,7 +40,12 @@
 @media(width >= 800px){
     .container{
         height: 40vh;
+
+        .sectionTitle{
+            font-size: 40px;
+        }
     }
+    
     .projectContainer{
         flex-direction: row;
         flex-wrap: wrap;

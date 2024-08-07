@@ -1,0 +1,8 @@
+body{
+    background-image: url(./assets/UpBgcopy.png);
+    background-position: -1800px top;
+    background-size: 4000px 4000px;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
