@@ -1,7 +1,13 @@
 body{
     background-image: url(./assets/UpBgcopy.png);
-    background-position: -1800px top;
-    background-size: 4000px 4000px;
+    background-position: -2175px 0px;
+    background-size: 4800px 6000px;
     overflow-x: hidden;
 }
 
+
+@media(width >= 800px){
+    body{
+        background-image: '';
+    }
+}
