@@ -96,6 +96,11 @@
             width: 400px;
             border-radius: 200px;
         }
+        .im{
+            font-size: 30px;
+            margin-bottom: -20px;
+            color: rgb(36, 251, 101);
+        }
     } 
 }
 
