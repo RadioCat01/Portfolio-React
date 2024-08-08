@@ -7,6 +7,7 @@
     min-height: 100dvh;
     padding-top: 60px;
     .hero{
+        margin-top: -80px;
         max-width: 240px;
         border-radius: 120px;
     }
@@ -69,7 +70,7 @@
 .colorMode{
     position: absolute;
     right: -25px;
-    top: -90px;
+    top: -140px;
     width: 25px;
 }
 .colorMode:hover{
