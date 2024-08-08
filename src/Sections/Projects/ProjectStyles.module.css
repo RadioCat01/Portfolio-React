@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    
 
     img{
         max-width: 250px;
@@ -26,10 +27,11 @@
 }
 
 .projectContainer{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
     align-items: center;
-    gap: 30px;
+    justify-items: center;
 }
 
 @media(width >= 800px){

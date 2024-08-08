@@ -1,6 +1,6 @@
 .container{
-    margin-top: 40px;
-    height: 150dvh;
+    margin-top: -10px;
+    height: 120dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;

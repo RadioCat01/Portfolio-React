@@ -1,5 +1,5 @@
 .container{
-    margin-top: -100px;
+    margin-top: -160px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -39,7 +39,7 @@
 
 @media(width >= 800px){
     .container{
-        height: 40vh;
+    
 
         .sectionTitle{
             font-size: 40px;
@@ -47,9 +47,10 @@
     }
     
     .projectContainer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 0 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px; 
+        align-items: center;
+        justify-items: center;
     }
 }

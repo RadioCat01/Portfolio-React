@@ -14,6 +14,7 @@ function Blogs() {
             <BlogCard src={springJpa} link={'https://radiocatwrites.hashnode.dev/what-is-infinite-recursive-loop-in-spring-boot-everything-you-need-to-know'} h3={'Spring Boot'} p={'What is infinite recursion problem in Spring data JPA?'} />
             <BlogCard src={springBoot} link={'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'} h3={'Spring'} p={'Dependency injection explained with SOLID principles'}/>
             <BlogCard src={springRe} link={'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'} h3={'Spring Reactive'} p={'What is Spring WebFlux. Everything you neet to know !'}/>
+            <BlogCard src={springRe} link={'https://radiocatwrites.hashnode.dev/spring-boot-dependency-injection-through-the-lens-of-solid-principles'} h3={'Spring Reactive'} p={'What is Next blog topic and About the blog'}/>
         </div>
     </section>
   )

@@ -28,6 +28,13 @@
   
 
   @media(width >= 800px){
+    .container{
+      margin-top: -150px;
+      margin-bottom: 280px;
+      h1{
+        font-size: 40px;
+      }
+    }
     .repoList{
         flex-direction: row-reverse;
         align-items: center;

@@ -4,9 +4,12 @@
     object-fit: contain;
     max-height: 200px; 
     padding: 25px 0 25px 0;
+    margin-top: -20px;
   }
 .p{
     max-width: 20ch;
+    font-family: 'Rubik';
+    font-weight: 500;
 }
 .container{
     display: flex;
@@ -14,8 +17,14 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    min-width: 280px;
+    min-width: 220px;
     margin-bottom: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    background-color: var(--project-card);
+    height: 220px;
+    padding: 20px;
+
 
 
     .hr{
@@ -25,15 +34,14 @@
         width: 80px;
     }
     .topic{
-        color: rgb(194, 166, 55);
+        color: var(--btn-color);
         font-family: 'Roboto mono';
-        font-weight: 600;
+        font-weight: 800;
     }
 }
 
 @media(width >= 800px){
     .container{
-        height: 40vh;
 
         .p{
             font-size: 16px;

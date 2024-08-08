@@ -4,8 +4,8 @@
     justify-content: center;
     gap: 20px;
     text-align: center;
-    height: 100dvh;
-    min-height: 800px;
+    height: 80dvh;
+    min-height: 80dvh;
     .hero{
         max-width: 240px;
         border-radius: 120px;
@@ -95,6 +95,8 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-evenly;
+        min-height: 95dvh;
+
 
         .hero{
             max-width: 400px;
