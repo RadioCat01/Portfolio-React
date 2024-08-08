@@ -7,7 +7,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const transition = {
   duration: 0.5,
-  ease: [0.43, 0.13, 0.23, 0.96] 
+  ease: [0.43, 0.13, 0.23, 0.96]
 };
 
 function AboutMe() {
@@ -26,7 +26,8 @@ function AboutMe() {
             transition={transition} 
             src={aboutpic} 
             className={styles.img} 
-            style={{ willChange: 'opacity, transform' }}/>
+            style={{ willChange: 'transform, opacity' }} 
+            loading="lazy"/>
           <div className={styles.PandRes}>
             <motion.p 
               whileInView={{ opacity: 1, x: 0 }} 
@@ -36,7 +37,7 @@ function AboutMe() {
               Passionate about creating impactful digital solutions, I thrive on innovation and collaboration.
               I am eager to bring my skills and creativity to the tech industry.
             </motion.p>
-            <motion.div className={styles.cont} style={{ willChange: 'opacity, transform' }}>
+            <motion.div className={styles.cont} style={{ willChange: 'transform, opacity' }}>
               <a href={CV} download>
                 <button className={styles.resume}>Resume</button>
               </a>
