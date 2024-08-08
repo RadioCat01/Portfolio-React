@@ -5,16 +5,21 @@ import Contacts from '../../Sections/Contact/Contact';
 import Footer from '../../Sections/Footer/Footer';
 import Repos from '../../Sections/Repos/Repos';
 import AboutMe from '../../Sections/AboutMeBand/AboutMe';
+import styles from './homepageStyles.module.css';
 
 function HomePage() {
   return (
     <BrowserRouter>
-    <Hero/>
-    <Repos/>
-    <Blogs/>
-    <AboutMe/>
-    <Contacts/>
-    <Footer/>
+      <div className={styles.pagecontainer}>
+        <main className={styles.content}>
+          <Hero/>
+          <Repos/>
+          <Blogs/>
+          <AboutMe/>
+          <Contacts/>
+        </main>
+        <Footer/>
+      </div>
     </BrowserRouter>
   )
 }
