@@ -1,12 +1,11 @@
 .container{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     text-align: center;
-    min-height: 80dvh;
-    padding-top: 100px;
+    min-height: 100dvh;
+    padding-top: 60px;
     .hero{
         max-width: 240px;
         border-radius: 120px;
