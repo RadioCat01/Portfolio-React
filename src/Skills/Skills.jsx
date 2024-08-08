@@ -12,12 +12,14 @@ import mongo  from '../assets/Skills/mongodb.svg';
 import ps  from '../assets/Skills/pngwing.com.png';
 import uni  from '../assets/Skills/unity.svg';
 import hy  from '../assets/Skills/Hibernate.svg';
+import { motion } from "framer-motion";
+
 
 
 
 function Skills() {
   return (
-    <section id='skills' className={styles.container}>
+    <motion.section id='skills' className={styles.container} whileInView={{opacity:1, y:0}} initial={{opacity: 0, y:-100}} transition={{duration:0.5}}>
         <div className={styles.skillList}>
            <SkillsList src={java} />
            <SkillsList src={c} />
@@ -40,7 +42,7 @@ function Skills() {
            <SkillsList src={uni} />
         </div>
         
-    </section>
+    </motion.section>
   );
 }
 
