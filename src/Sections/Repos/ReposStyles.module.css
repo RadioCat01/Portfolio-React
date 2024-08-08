@@ -26,4 +26,11 @@
     gap: 40px;
   }
   
-  
+
+  @media(width >= 800px){
+    .repoList{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+}
