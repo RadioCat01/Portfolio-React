@@ -7,12 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch src/Data.json --port 8000"
   },
   "dependencies": {
+    "blog-pf-react": "file:",
     "framer-motion": "^11.3.21",
+    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.26.0",
     "react-router-hash-link": "^2.4.3",
     "react-simple-typewriter": "^5.0.1",

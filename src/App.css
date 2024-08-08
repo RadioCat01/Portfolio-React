@@ -6,6 +6,8 @@
     --text-color: #222;
     --form-text-color: #555;
     --footer-text-color: #888;
+    --project-card:rgb(255, 255, 255, 0.8);
+    --project-card-text:#222;
 }
 
 [data-theme='dark']{
@@ -16,6 +18,7 @@
     --text-color: #fff;
     --form-text-color: #fff;
     --footer-text-color: #bbb;
+    --project-card:rgb(53, 53, 55, 0.8);
 }
 
 body{
@@ -31,13 +34,13 @@ body{
     gap: 60px;
 }
 
-h1,h2,h3,p{
+h1,h2,h3,p,pre{
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-h2,h3,p{
+h2,h3,p,pre{
     font-family: 'Roboto Mono';
 }
 
@@ -51,7 +54,7 @@ h1{
     font-family: 'Rubik';
     font-size: 32px;
 }
-p{
+p,pre{
     font-size: 14px;
     font-weight: 600;
 }
