@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './ReposStyles.module.css';
 import RepoCard from './RepoCard/RepoCard';
-import { motion } from "framer-motion";
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 const GitHubRepos = () => {
   const [repos, setRepos] = useState([]);
@@ -10,6 +10,11 @@ const GitHubRepos = () => {
   const [error, setError] = useState(null);
 
   const localStorageKey = 'githubRepos'; // Key for storing data in localStorage
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.1, // Adjust threshold as needed
+  });
 
   const fetchRepos = async () => {
     console.log("fetched");
@@ -71,9 +76,16 @@ const GitHubRepos = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <section id='projects' className={styles.container}>
-      <motion.h1 whileInView={{opacity:1, y:0}} initial={{opacity: 0, y:50}} transition={{duration:0.5}}>Projects</motion.h1>
-     {/*<button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button>*/}
+    <section id='projects' className={styles.container} ref={ref}>
+      <motion.h1 
+        whileInView={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, y: 50 }} 
+        transition={{ duration: 0.5 }} 
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      >
+        Projects
+      </motion.h1>
+      {/* <button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button> */}
       <ul className={styles.repoList}>
         {repos.map(repo => (
           <li key={repo.id} className={styles.repoItem}>
