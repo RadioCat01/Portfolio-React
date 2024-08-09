@@ -16,32 +16,11 @@ function BlogCard({ src, link, h3, p }) {
       transition={{ duration: 0.5 }} 
       href={link} 
       className={styles.container}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate only if inView
-    >
-      <motion.img 
-        className={styles.img} 
-        src={src} 
-        initial={{ opacity: 0, y: 50 }} 
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} 
-        transition={{ duration: 0.5 }} 
-        loading="lazy"
-      />
-      <motion.p 
-        className={styles.p} 
-        initial={{ opacity: 0, y: 50 }} 
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} 
-        transition={{ duration: 0.5 }}
-      >
-        {p}
-      </motion.p>
-      <motion.p 
-        className={styles.topic} 
-        initial={{ opacity: 0, y: 50 }} 
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} 
-        transition={{ duration: 0.5 }}
-      >
-        {h3}
-      </motion.p>
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}>
+        
+      <img className={styles.img} src={src} loading="lazy"/>
+      <p className={styles.p}>{p}</p>
+      <p className={styles.topic} >{h3}</p>
     </motion.a>
   );
 }
