@@ -11,14 +11,12 @@ function HomePage() {
   return (
     <BrowserRouter>
       <div className={styles.pagecontainer}>
-        <main className={styles.content}>
           <Hero/>
           <Repos/>
           <Blogs/>
           <AboutMe/>
           <Contacts/>
-        </main>
-        <Footer/>
+          <Footer/>
       </div>
     </BrowserRouter>
   )

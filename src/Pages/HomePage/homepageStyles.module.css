@@ -1,19 +1,5 @@
-
-html, body {
-    min-height: 100vh;
-    margin: 0;
-  }
-  
-  .page-container {
+.pagecontainer{
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure container takes full viewport height */
-  }
-  
-  .content {
-    flex: 1; /* This will take up the remaining space between the header and footer */
-  }
-  
-  footer {
-    /* Ensure the footer is always at the bottom */
-  }
+    gap: 100px;
+}
