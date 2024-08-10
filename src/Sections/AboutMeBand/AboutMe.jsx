@@ -19,7 +19,7 @@ function AboutMe() {
         ref={h1Ref}
         initial={{ opacity: 0, y: 50 }} 
         animate={h1InView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0 }}  >
+        transition={{ delay: 0.3 }}  >
         About Me
       </motion.h1>
       <div className={styles.info}>

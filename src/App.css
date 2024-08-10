@@ -21,9 +21,10 @@
     --project-card:rgb(53, 53, 55, 0.8);
 }
 
-*{
-    transition: all ease-in;
+.transition {
+    will-change: transform, opacity;
 }
+
 
 body{
     height: 100%;
