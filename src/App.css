@@ -23,7 +23,6 @@
 
 *{
     transition: all ease-in;
-    will-change: transform, opacity;
 }
 
 body{
