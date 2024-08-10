@@ -31,8 +31,8 @@ const RepoCard = ({ repo }) => {
       className={styles.card} 
       initial={{ opacity: 0, y: 50 }} 
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} 
-      transition={{ duration: 0.5 }}
-    >
+      transition={{ delay: 0 }}  
+          >
       <p className={styles.repohead}>Repository</p>
       <h2>{repo.name}</h2>
       <div className={styles.readmeContent}>
