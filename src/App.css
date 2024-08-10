@@ -22,8 +22,7 @@
 }
 
 *{
-    transition: all ease-in;
-    will-change: transform;
+    transition: all 0.3s ease-in;
 }
 
 body{
