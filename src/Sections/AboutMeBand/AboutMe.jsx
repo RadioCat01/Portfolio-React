@@ -17,7 +17,7 @@ function AboutMe() {
     <section id='AboutMe' className={styles.container}>
       <motion.h1 
         ref={h1Ref}
-        initial={{ opacity: 0, y: -100 }} 
+        initial={{ opacity: 0, y: 50 }} 
         animate={h1InView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0 }}  >
         About Me
@@ -25,7 +25,7 @@ function AboutMe() {
       <div className={styles.info}>
         <motion.img 
           ref={imgRef}
-          initial={{ opacity: 0, x: -100 }} 
+          initial={{ opacity: 0, x: -50 }} 
           animate={imgInView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0 }}  
           src={aboutpic} 
@@ -35,7 +35,7 @@ function AboutMe() {
         <div className={styles.PandRes}>
           <motion.p 
             ref={pRef}
-            initial={{ opacity: 0, x: 100 }} 
+            initial={{ opacity: 0, x: 50 }} 
             animate={pInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0 }}  >
             An aspiring web developer and software engineer from Sabaragamuwa University of Sri Lanka.

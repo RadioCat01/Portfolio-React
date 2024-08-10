@@ -21,6 +21,10 @@
     --project-card:rgb(53, 53, 55, 0.8);
 }
 
+*{
+    transition: all ease-in;
+}
+
 body{
     height: 100%;
     background-color: var(--background-color);
