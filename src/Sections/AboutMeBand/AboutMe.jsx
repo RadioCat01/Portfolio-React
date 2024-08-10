@@ -18,14 +18,16 @@ function AboutMe() {
       <motion.h1 
         ref={h1Ref}
         initial={{ opacity: 0, y: -100 }} 
-        animate={h1InView ? { opacity: 1, y: 0 } : {}} >
+        animate={h1InView ? { opacity: 1, y: 0 } : {}}
+        transition={{ delay: 0.5 }}  >
         About Me
       </motion.h1>
       <div className={styles.info}>
         <motion.img 
           ref={imgRef}
           initial={{ opacity: 0, x: -100 }} 
-          animate={imgInView ? { opacity: 1, x: 0 } : {}} 
+          animate={imgInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ delay: 0.5 }}  
           src={aboutpic} 
           className={styles.img} 
           style={{ willChange: 'transform, opacity' }} 
@@ -34,12 +36,13 @@ function AboutMe() {
           <motion.p 
             ref={pRef}
             initial={{ opacity: 0, x: 100 }} 
-            animate={pInView ? { opacity: 1, x: 0 } : {}} >
+            animate={pInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.5 }}  >
             An aspiring web developer and software engineer from Sabaragamuwa University of Sri Lanka.
             Passionate about creating impactful digital solutions, I thrive on innovation and collaboration.
             I am eager to bring my skills and creativity to the tech industry.
           </motion.p>
-          <motion.div className={styles.cont} style={{ willChange: 'transform, opacity' }}>
+          <motion.div className={styles.cont} style={{ willChange: 'transform, opacity' }} transition={{ delay: 0.5 }} >
             <a href={CV} download>
               <button className={styles.resume}>Resume</button>
             </a>

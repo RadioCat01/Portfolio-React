@@ -31,11 +31,11 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-        <motion.div initial={{x:-100, opacity:0}} animate={{ x: 0, opacity: 1}} className={styles.colorModeContainer}>
+        <motion.div initial={{x:-100, opacity:0}} animate={{ x: 0, opacity: 1}} transition={{ delay: 0.5 }} className={styles.colorModeContainer}>
             <img src={profilePic} alt='profPic' className={styles.hero}/>
             <img onClick={toggleTheme} src={themeIcon} alt='Light-Dark' className={styles.colorMode}/>
         </motion.div>
-        <motion.div initial={{x:100, opacity:0}} animate={{ x: 0, opacity: 1}} className={styles.info}>
+        <motion.div initial={{x:100, opacity:0}} animate={{ x: 0, opacity: 1}} transition={{ delay: 0.5 }}  className={styles.info}>
             <h1 className={styles.im}>I'm</h1>
             <h1>Pawan<br/> Hettiarachchi</h1>
             <h2 className={styles.typeWriterh2}>{text}</h2>

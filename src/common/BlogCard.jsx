@@ -13,7 +13,7 @@ function BlogCard({ src, link, h3, p }) {
       ref={ref} 
       whileInView={{ opacity: 1, y: 0 }} 
       initial={{ opacity: 0, y: 50 }} 
-      transition={{ duration: 0.5 }} 
+      transition={{ delay: 0.2 }}  
       href={link} 
       className={styles.container}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}>
