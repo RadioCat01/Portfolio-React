@@ -23,15 +23,16 @@ const GitHubRepos = () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
+      console.log(response);
       const reposData = await response.json();
-
+      console.log(reposData);
       // Fetch README files for each repository
       const reposWithReadme = await Promise.all(
         reposData.map(async (repo) => {
           try {
             const readmeResponse = await fetch(`https://api.github.com/repos/RadioCat01/${repo.name}/readme`, {
               headers: {
-                Accept: 'application/vnd.github.v3.raw', // to get the raw README content
+                Accept: 'application/vnd.github.v3.raw',
               },
             });
             if (!readmeResponse.ok) {
@@ -44,9 +45,10 @@ const GitHubRepos = () => {
           }
         })
       );
-
+      
       // Save to localStorage
       localStorage.setItem(localStorageKey, JSON.stringify(reposWithReadme));
+      console.log(reposWithReadme);
       setRepos(reposWithReadme);
     } catch (error) {
       setError(error);
@@ -85,7 +87,7 @@ const GitHubRepos = () => {
       >
         Projects
       </motion.h1>
-      {/* <button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button> */}
+      {/*<button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button> */}
       <ul className={styles.repoList}>
         {repos.map(repo => (
           <li key={repo.id} className={styles.repoItem}>
