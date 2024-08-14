@@ -1,1 +1,1 @@
-React Portfolio site with use of Git API and
+React Portfolio site with use of Git API and more
