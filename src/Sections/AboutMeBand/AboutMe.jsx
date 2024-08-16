@@ -1,6 +1,6 @@
 import styles from './AboutMeStyles.module.css';
 import aboutpic from '../../assets/Photo 2024-08-06, 10 05 46 PM.jpg';
-import CV from '../../assets/20APC4639_ADatabase_Assignment_01&02.pdf'
+import CV from '../../assets/Sample-CV.pdf'
 import { motion } from "framer-motion";
 import Skills from '../../Skills/Skills';
 import { HashLink as Link } from 'react-router-hash-link';
