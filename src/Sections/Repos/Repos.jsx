@@ -21,7 +21,7 @@ const GitHubRepos = () => {
     try {
       const response = await fetch('https://api.github.com/users/RadioCat01/repos');
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Too Many Requests :(');
       }
       console.log(response);
       const reposData = await response.json();
@@ -66,6 +66,7 @@ const GitHubRepos = () => {
     } else {
       fetchRepos();
     }
+
   }, []);
 
   const handleRefresh = () => {
@@ -73,6 +74,7 @@ const GitHubRepos = () => {
     setLoading(true);
     fetchRepos();
   };
+
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
@@ -87,7 +89,6 @@ const GitHubRepos = () => {
       >
         Projects
       </motion.h1>
-      {/*<button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button> */}
       <ul className={styles.repoList}>
         {repos.map(repo => (
           <li key={repo.id} className={styles.repoItem}>
