@@ -9,11 +9,11 @@ const GitHubRepos = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const localStorageKey = 'githubRepos'; // Key for storing data in localStorage
+  const localStorageKey = 'githubRepos'; 
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.1, // Adjust threshold as needed
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
   const fetchRepos = async () => {
@@ -26,7 +26,7 @@ const GitHubRepos = () => {
       console.log(response);
       const reposData = await response.json();
       console.log(reposData);
-      // Fetch README files for each repository
+
       const reposWithReadme = await Promise.all(
         reposData.map(async (repo) => {
           try {
@@ -46,7 +46,7 @@ const GitHubRepos = () => {
         })
       );
       
-      // Save to localStorage
+   
       localStorage.setItem(localStorageKey, JSON.stringify(reposWithReadme));
       console.log(reposWithReadme);
       setRepos(reposWithReadme);
@@ -58,7 +58,7 @@ const GitHubRepos = () => {
   };
 
   useEffect(() => {
-    // Load from localStorage if available
+  
     const savedRepos = localStorage.getItem(localStorageKey);
     if (savedRepos) {
       setRepos(JSON.parse(savedRepos));
@@ -84,10 +84,9 @@ const GitHubRepos = () => {
         initial={{ opacity: 0, y: 50 }} 
         transition={{ delay: 0 }}  
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      >
+        onClick={handleRefresh}>
         Projects
       </motion.h1>
-      <button onClick={handleRefresh} className={styles.refreshButton}>Refresh Data</button>
       <ul className={styles.repoList}>
         {repos.map(repo => (
           <li key={repo.id} className={styles.repoItem}>
