@@ -108,15 +108,29 @@
             color: rgb(36, 251, 101);
         }
     } 
+    .colorMode{
+        margin-right: 60px;
+        width: 25px;
+    }
 }
 
 @media(width >= 1400px){
    .container{
-   
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 95dvh;
+
+
     .hero{
         max-width: 400px;
         width: 400px;
         border-radius: 200px;
+    }
+    .im{
+        font-size: 30px;
+        margin-bottom: -20px;
+        color: rgb(36, 251, 101);
     }
 }
 .description{
@@ -124,10 +138,5 @@
     margin-left: 40px;
 }
 
-.colorMode{
-    position: absolute;
-    right: -240px;
-    top: -200px;
-    width: 25px;
-}
+
 }

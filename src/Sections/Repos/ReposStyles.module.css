@@ -36,7 +36,7 @@
     }
     .repoList{
         flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
     } 
 }
