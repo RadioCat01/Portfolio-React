@@ -46,7 +46,7 @@ function Hero() {
                 <a href='https://github.com/RadioCat01' target='_blank'>
                     <img src={github} alt='Github icon'/>
                 </a>
-                <a href='https://www.linkedin.com/in/pawan-kanishka-86b438249/' target='_blank'>
+                <a href='https://www.linkedin.com/in/pawan-hettiarachchi-86b438249/' target='_blank'>
                     <img src={linkedin} alt='Ln icon'/>
                 </a>
             </span>
