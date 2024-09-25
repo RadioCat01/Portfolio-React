@@ -1,5 +1,5 @@
 import styles from './AboutMeStyles.module.css';
-import aboutpic from '../../assets/Crop.jpg';
+import aboutpic from '../../assets/img2.jpg';
 import CV from '../../assets/Resume-Pawan Hettiarachchi.pdf'
 import { motion } from "framer-motion";
 import Skills from '../../Skills/Skills';
